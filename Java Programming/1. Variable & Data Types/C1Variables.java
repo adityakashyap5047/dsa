@@ -4,12 +4,12 @@ public class C1Variables {
         
         String name = "Aditya Kumar";
         int age = 19;
-        double cgpa = 8.3;
+        float cgpa = 8.3f;
 
         System.out.println(name + " is "+age+" years old with "+cgpa+" cgpa");
 
         age = 20;
-        cgpa = 8.5;
+        cgpa = 8.5f;
 
         System.out.println(name + " is "+age+" years old with "+cgpa+" cgpa");
     }

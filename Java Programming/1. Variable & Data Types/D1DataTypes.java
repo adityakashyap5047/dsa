@@ -10,7 +10,7 @@ public class D1DataTypes {
         boolean isOk = true;
         System.out.println(isOk);
 
-        float price = (float)10.5;
+        float price = 10.5f;
         System.out.println(price);
 
         int number = 500;
