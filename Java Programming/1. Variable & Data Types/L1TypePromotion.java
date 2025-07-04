@@ -30,5 +30,12 @@ public class L1TypePromotion {
 
         double ans = a2 + b2 - c2 + d2;
         System.out.println(ans);
+
+
+        byte bt = 5;
+        
+        // bt = bt * 2;
+
+        bt = (byte)(bt * 2);
     }
 }
