@@ -18,11 +18,17 @@ public class J1TypeConversion {
 
         Scanner sc = new Scanner(System.in);
 
+        System.out.print("Enter your Marks: ");
         float marks = sc.nextInt();
         System.out.println("Marks: " + marks);
 
         // int number = sc.nextFloat();    //Error: incompatible types: possible lossy conversion from float to int
         // System.out.println("Number: " + number);
+
+
+        char ch = 'a';
+        int charNum = ch;
+        System.out.println(charNum);
 
         sc.close();
     }
