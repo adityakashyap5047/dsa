@@ -4,6 +4,7 @@ public class OnedotJavaBasics {
         
         System.out.println("Hello Aditya, Welcome to Java");
         System.out.print("Hellllo ");
-        System.out.print("G, How are you?");
+        System.out.print("G, How are you? \n");
+        System.out.println("I am fine and what about you?");
     }
 }
