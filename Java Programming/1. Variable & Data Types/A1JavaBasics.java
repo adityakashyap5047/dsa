@@ -1,4 +1,4 @@
-public class OnedotJavaBasics {
+public class A1JavaBasics {
 
     public static void main(String[] args) {
         
