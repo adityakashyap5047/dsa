@@ -1,4 +1,4 @@
-public class A1ArithmeticOperator {
+public class A2ArithmeticOperator {
     
     public static void main(String[] args) {
         int A = 10;

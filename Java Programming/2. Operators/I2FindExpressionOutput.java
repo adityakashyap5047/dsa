@@ -1,4 +1,4 @@
-public class I9FindExpressionOutput {
+public class I2FindExpressionOutput {
     
     public static void main(String[] args){
         int x = 10, y = 5;

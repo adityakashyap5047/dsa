@@ -1,4 +1,4 @@
-public class H8FindExpressionOutput {
+public class H2FindExpressionOutput {
     
     public static void main(String[] args){
         int x = 9, y = 12;

@@ -1,4 +1,4 @@
-public class C3LogicalOperator {
+public class C2LogicalOperator {
 
     public static void main(String[] args) {
         

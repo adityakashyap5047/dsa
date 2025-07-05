@@ -1,4 +1,4 @@
-public class F6FindExpressionOutput {
+public class F2FindExpressionOutput {
 
     public static void main(String[] args) {
         int x = 200, y = 50, z = 100;

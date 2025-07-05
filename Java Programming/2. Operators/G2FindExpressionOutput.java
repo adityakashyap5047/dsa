@@ -1,4 +1,4 @@
-public class G7FindExpressionOutput {
+public class G2FindExpressionOutput {
     
     public static void main(String[] args){
         int x, y, z;
