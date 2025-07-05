@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class C3PrintNumber1toN {
+public class C4PrintNumber1toN {
     
     public static void main(String[] args) {
         
