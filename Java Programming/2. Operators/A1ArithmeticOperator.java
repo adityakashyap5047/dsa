@@ -17,5 +17,13 @@ public class A1ArithmeticOperator {
         int D = B++;
         System.out.println("D with Post-increment: " + D);
         System.out.println("Value of B after Post-increment: " + B);
+
+        int E = --A;
+        System.out.println("E with Pre-decrement: " + E);
+        System.out.println("Value of A after Pre-decrement: " + A);
+
+        int F = B--;
+        System.out.println("F with Post-decrement: " + F);
+        System.out.println("Value of B after Post-decrement: " + B);
     }
 }
