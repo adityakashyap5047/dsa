@@ -1,4 +1,4 @@
-public class H8PassAndFailUsingTernary {
+public class H3PassAndFailUsingTernary {
     
     public static void main(String[] args) {
         int marks = 50;

@@ -1,4 +1,4 @@
-public class B2PrintLargest {
+public class B3PrintLargest {
     
     public static void main(String[] args) {
         

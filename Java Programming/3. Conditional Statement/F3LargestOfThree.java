@@ -1,4 +1,4 @@
-public class F6LargestOfThree {
+public class F3LargestOfThree {
     
     public static void main(String[] args) {
         

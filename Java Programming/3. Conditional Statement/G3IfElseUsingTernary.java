@@ -1,4 +1,4 @@
-public class G7IfElseUsingTernary {
+public class G3IfElseUsingTernary {
     
     public static void main(String[] args) {
         

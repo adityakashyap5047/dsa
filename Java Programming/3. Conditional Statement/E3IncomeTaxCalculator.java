@@ -1,4 +1,4 @@
-public class E5IncomeTaxCalculator {
+public class E3IncomeTaxCalculator {
     
     public static void main(String[] args) {
         
