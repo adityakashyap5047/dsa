@@ -17,6 +17,6 @@ public class B6SumOfNoUsingFunction {
         int num2 = sc.nextInt();
 
         sumOfNumber(num1, num2);
-        sc.close();
+        sc.close(); 
     }
 }
