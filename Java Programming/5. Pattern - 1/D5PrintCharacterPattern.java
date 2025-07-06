@@ -1,5 +1,14 @@
 public class D5PrintCharacterPattern {
     
+    /*
+
+        A 
+        B C 
+        D E F 
+        G H I J
+     
+    */
+
     public static void main(String[] args) {
         
         int n = 4;
