@@ -1,4 +1,12 @@
 public class F5InvertednRotatedHalfPyramid {
+
+    /*
+              * 
+            * * 
+          * * * 
+        * * * * 
+        
+    */
     
     public static void main(String[] args) {
         
