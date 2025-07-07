@@ -22,6 +22,7 @@ public class B2InputInArray {
         }
         System.out.println();
 
+        System.out.println("The length of Array is: " + marks.length);
         sc.close();
     }
 }
