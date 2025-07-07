@@ -8,8 +8,13 @@ public class G6MethodOverloading {
         return num1 + num2 + num3;
     }
 
+    public static float sum(float num1, float num2){
+        return num1 + num2;
+    }
+
     public static void main(String[] args) {
         System.out.println(sum(4, 9));
         System.out.println(sum(9, 3, 8));
+        System.out.println(sum(4.5f, 4.5f));
     }
 }
