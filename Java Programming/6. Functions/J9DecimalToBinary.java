@@ -12,9 +12,22 @@ public class J9DecimalToBinary {
         return Integer.parseInt(binary);
     }
 
+    public static void decToBin(int n){
+        int binNum = 0, dec = 1;
+
+        while (n > 0) {
+            int rem = n % 2;
+            binNum += rem * dec;
+            dec *= 10;
+            n = n / 2;
+        }
+        System.out.println(binNum);
+    }
+
     public static void main(String[] args) {
         System.out.println(decimalToBinary(156));
         System.out.println(decimalToBinary(15));
         System.out.println(decimalToBinary(4));
+        decToBin(156);
     }
 }
