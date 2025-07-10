@@ -22,8 +22,28 @@ class MyStack {
         top -= 1;
         return peek;
     }
+
+    public void printStack(){
+        if (top == -1) {
+            return;
+        }
+        for (int i = 0; i <= top; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
 }
 
 public class W23StackUsingArray {
+    
+    public static void main(String[] args) {
+        MyStack s = new MyStack();
+
+        s.push(5);
+        s.push(10);
+        s.printStack();
+        s.pop();
+        s.printStack();
+    }
     
 }
