@@ -6,13 +6,23 @@ public class A0004CircularSubarraySum {
 
         int currSum[] = new int[n];
 
+        boolean isNegative;
+        int maxNegative = arr[0];
         if (arr[0] < 0) {
+            isNegative = true;
             currSum[0] = 0;
         } else {
+            isNegative = false;
             currSum[0] = arr[0];
         }
 
         for (int i = 1; i < n; i++) {
+            if (isNegative && arr[i] < 0) {
+                isNegative = true;
+                maxNegative = Math.max(maxNegative, arr[i]);
+            } else {
+                isNegative = false;
+            }
             int sum = currSum[i-1] + arr[i];
             if (sum < 0) {
                 currSum[i] = 0;
@@ -25,6 +35,10 @@ public class A0004CircularSubarraySum {
             if (maxSum < currSum[i]) {
                 maxSum = currSum[i];
             }
+        }
+
+        if (isNegative) {
+            return maxNegative;
         }
 
         return maxSum;
@@ -52,7 +66,7 @@ public class A0004CircularSubarraySum {
 
     public static void main(String[] args) {
 
-        int arr[] = {8, -8, 9, -9, 10, -11, 12};
+        int arr[] = {-4, -2, -1, -2, -6};
         System.out.println(circularSubarraySum(arr));
     }
 }
