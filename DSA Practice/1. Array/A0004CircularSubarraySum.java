@@ -1,7 +1,6 @@
 public class A0004CircularSubarraySum {
     
-    public static int circularSubarraySum(int arr[]){
-
+    public static int Kadane(int arr[]){
         int n = arr.length;
         int maxSum = 0;
 
@@ -29,6 +28,26 @@ public class A0004CircularSubarraySum {
         }
 
         return maxSum;
+    }
+
+    public static int circularSubarraySum(int arr[]){
+        
+        int maxNormal = Kadane(arr);
+
+        if (maxNormal < 0) {
+            return maxNormal;
+        }
+
+        int totalSum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            totalSum += arr[i];
+            arr[i] = -arr[i];
+        }
+
+        int invertedSum = Kadane(arr);
+        int maxCircular = totalSum + invertedSum;
+
+        return Math.max(maxNormal, maxCircular);
     }
 
     public static void main(String[] args) {
