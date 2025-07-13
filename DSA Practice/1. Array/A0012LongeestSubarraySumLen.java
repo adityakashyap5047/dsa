@@ -1,34 +1,29 @@
+import java.util.HashMap;
+
 public class A0012LongeestSubarraySumLen {
-    
-    public static int prefixSum(int prefixArr[], int minIdx, int maxIdx){
-        if (minIdx == 0) {
-            return prefixArr[maxIdx];
-        } else{
-            return prefixArr[maxIdx] - prefixArr[minIdx - 1];
-        }
-    }
 
     public static int subarraySum(int arr[], int target){
 
-        int prefixArr[] = new int[arr.length];
-        
-        prefixArr[0] = arr[0];
-        for (int i = 1; i < arr.length; i++) {
-            prefixArr[i] = arr[i] + prefixArr[i-1];
-        }
+        HashMap<Integer, Integer> prefixMap = new HashMap<>();
+        int prefixSum = 0;
+        int maxLen = 0;
 
-        int subArrayLen = 0;
-        for(int minIdx = 0; minIdx < arr.length; minIdx++){
-            for(int maxIdx = minIdx; maxIdx < arr.length; maxIdx++){
-                int sum = prefixSum(prefixArr, minIdx, maxIdx);
-                if (sum == target) {
-                    int len = maxIdx - minIdx + 1;
-                    subArrayLen = Math.max(len, subArrayLen);
-                }
+        for (int i = 0; i < arr.length; i++) {
+            prefixSum += arr[i];
+
+            if (prefixSum == target) {
+                maxLen = i + 1;
             }
+
+            if (prefixMap.containsKey(prefixSum - target)) {
+                int prevIndex = prefixMap.get(prefixSum - target);
+                maxLen = Math.max(maxLen, i - prevIndex);
+            }
+
+            prefixMap.putIfAbsent(prefixSum, i);
         }
 
-        return subArrayLen;
+        return maxLen;
     }
 
     public static void main(String[] args) {
