@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.HashSet;
 
-public class A0019FindDuplicates{
+public class A0020FindDuplicates{
 
     public static ArrayList<Integer> findDuplicates(int arr[]){
         HashSet<Integer> set = new HashSet<>();
